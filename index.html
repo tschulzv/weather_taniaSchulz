@@ -1,0 +1,81 @@
+<!--Tania Schulz-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1>DojoWeather</h1>
+            <div class="nav-links">
+                <a href="#" onclick="loadAlert()">Burbank</a>
+                <a href="#" onclick="loadAlert()">Chicago</a>
+                <a href="#" onclick="loadAlert()">Dallas</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h2 class="city-name">San Jose</h1>
+                <label for="select-temp">show temperature in:</label>
+                <select name="select-temp" id="select-temp" onchange="changeTemp()">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+            <div class="forecast">
+                <div class="box" id="today">
+                    <h3>Today</h3>
+                    <img src="some_rain.png">
+                    <p class="description">some rain</p>
+                    <div class="temps">
+                        <span class="max"><span class="max-temp">24</span>°</span>
+                        <span class="min"><span class="min-temp">18</span>°</span>
+                    </div>
+                </div>
+                <div class="box" id="tomorrow">
+                    <h3>Tomorrow</h3>
+                    <img src="some_sun.png">
+                    <p class="description">some sun</p>
+                    <div class="temps">
+                        <span class="max"><span class="max-temp">27</span>°</span>
+                        <span class="min"><span class="min-temp">19</span>°</span>
+                    </div>
+                </div>
+                <div class="box" id="friday">
+                    <h3>Fridayy</h3>
+                    <img src="some_clouds.png">
+                    <p class="description">some clouds</p>
+                    <div class="temps">
+                        <span class="max"><span class="max-temp">21</span>°</span>
+                        <span class="min"><span class="min-temp">16</span>°</span>
+                    </div>
+                </div>
+                <div class="box" id="saturday">
+                    <h3>Saturday</h3>
+                    <img src="some_sun.png">
+                    <p class="description">some sun</p>
+                    <div class="temps">
+                        <span class="max"><span class="max-temp">26</span>°</span>
+                        <span class="min"><span class="min-temp">24</span>°</span>
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <h3>STOP! COOKIE TIME </h3>
+                <div class="item">
+                    <img src="cookie.png">
+                    <div class="text">
+                        We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+                    </div>
+                    <button id="accept">I accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

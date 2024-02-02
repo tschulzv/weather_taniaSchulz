@@ -1,0 +1,138 @@
+/* Tania Schulz */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+
+.container {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.nav{
+    background-color: deepskyblue;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav > h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-links > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;    
+    margin: 10px;
+}
+
+.nav a:hover {
+    color: grey;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    background-color: gainsboro;
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2px;
+}
+
+.box > img {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.temps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.max {
+    color: red;
+}
+
+.min {
+    color: blue;
+}
+
+.message {
+    background-color: rgb(191, 224, 245);
+    padding: 10px;
+    position: fixed;
+    bottom: 10%;
+    right: 20%;
+    left: 20%;
+}
+
+.message > h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}  
+
+.item > img {
+    height: 2.5em;
+    width: auto;
+}
+
+.text {
+    white-space: pre-line;
+    width: 80%;
+    padding-left: 2%;
+}
+
+.text > a {
+    text-decoration: none;
+    color: blue;
+}
+
+button {
+    font-stretch: expanded;
+    height: 3em;
+    width: auto;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+}
